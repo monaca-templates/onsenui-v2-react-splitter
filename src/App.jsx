@@ -2,10 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Splitter, SplitterSide, SplitterContent, Page, Button} from 'react-onsenui';
 
-// load Onsen UI library
-import 'onsenui';
-
-class App extends React.Component {
+export default class App extends React.Component {
   constructor(props) {
     super(props);
 
@@ -31,7 +28,7 @@ class App extends React.Component {
       <Splitter>
         <SplitterSide
           side='left'
-          isCollapsed={true}
+          collapse={true}
           isOpen={this.state.isOpen}
           onClose={this.hide.bind(this)}
           isSwipeable={true}>
@@ -48,6 +45,3 @@ class App extends React.Component {
     );
   }
 }
-
-
-ReactDOM.render(<App />, document.getElementById('app'));
