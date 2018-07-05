@@ -31,7 +31,7 @@ export default class App extends React.Component {
           collapse={true}
           isOpen={this.state.isOpen}
           onClose={this.hide.bind(this)}
-          isSwipeable={true}>
+          swipeable={true}>
           <Page>
             Menu content
           </Page>
